@@ -1,6 +1,7 @@
-﻿class Program
+﻿using TechnicalAssesmentBackendDeveloper;
+class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         Console.WriteLine("Welcome to the Item Manager!");
 
@@ -24,7 +25,7 @@
         fruitManager.PrintAllItems();
 
         // Part Four (Bonus): Implement an interface IItemManager and make ItemManager implement it.
-        // TODO: Implement this part four.
+        await AppHost.Run(args);
     }
 }
 
